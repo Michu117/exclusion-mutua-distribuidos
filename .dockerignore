@@ -1,0 +1,6 @@
+capturas/
+salidas/
+__pycache__/
+*.md
+*.pdf
+.git/

@@ -1,0 +1,68 @@
+--- Experimento B: Nodo que retiene el token ---
+08:29:25.984 [Anillo] Nodo 0 inicia con el Token
+08:29:25.984 [Anillo] Nodo 0 retiene el token: entrada 1/5
+08:29:25.984 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:28.984 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:29.085 [Anillo] Nodo 0 retiene el token: entrada 2/5
+08:29:29.085 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:30.990 [Anillo] Nodo 1 lleva 5 s esperando el token
+08:29:30.992 [Anillo] Nodo 2 lleva 5 s esperando el token
+08:29:32.085 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:32.185 [Anillo] Nodo 0 retiene el token: entrada 3/5
+08:29:32.186 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:35.186 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:35.286 [Anillo] Nodo 0 retiene el token: entrada 4/5
+08:29:35.286 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:35.995 [Anillo] Nodo 1 lleva 10 s esperando el token
+08:29:35.997 [Anillo] Nodo 2 lleva 10 s esperando el token
+08:29:38.286 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:38.387 [Anillo] Nodo 0 retiene el token: entrada 5/5
+08:29:38.387 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:41.000 [Anillo] Nodo 1 lleva 15 s esperando el token
+08:29:41.002 [Anillo] Nodo 2 lleva 15 s esperando el token
+08:29:41.387 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:41.487 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:29:41.489 [Anillo] Nodo 1 recibe Token (esperó 15.5 s)
+08:29:41.489 [Anillo-B] NODO 1 ENTRANDO a la Sección Crítica...
+08:29:42.769 [Anillo-B] NODO 1 SALIENDO de la Sección Crítica.
+08:29:42.769 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:29:42.770 [Anillo] Nodo 2 recibe Token (esperó 16.8 s)
+08:29:42.770 [Anillo-B] NODO 2 ENTRANDO a la Sección Crítica...
+08:29:43.774 [Anillo-B] NODO 2 SALIENDO de la Sección Crítica.
+08:29:43.774 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:29:43.775 [Anillo] Nodo 0 recibe Token (esperó 2.2 s)
+08:29:43.775 [Anillo] Nodo 0 retiene el token: entrada 1/5
+08:29:43.775 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:46.775 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:46.876 [Anillo] Nodo 0 retiene el token: entrada 2/5
+08:29:46.876 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:48.412 [Anillo] Nodo 1 lleva 5 s esperando el token
+08:29:49.876 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:49.976 [Anillo] Nodo 0 retiene el token: entrada 3/5
+08:29:49.976 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:49.999 [Anillo] Nodo 2 lleva 5 s esperando el token
+08:29:52.976 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:53.077 [Anillo] Nodo 0 retiene el token: entrada 4/5
+08:29:53.077 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:53.417 [Anillo] Nodo 1 lleva 10 s esperando el token
+08:29:55.004 [Anillo] Nodo 2 lleva 10 s esperando el token
+08:29:56.077 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:56.177 [Anillo] Nodo 0 retiene el token: entrada 5/5
+08:29:56.177 [Anillo-B] NODO 0 ENTRANDO a la Sección Crítica...
+08:29:58.422 [Anillo] Nodo 1 lleva 15 s esperando el token
+08:29:59.178 [Anillo-B] NODO 0 SALIENDO de la Sección Crítica.
+08:29:59.278 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:29:59.279 [Anillo] Nodo 1 recibe Token (esperó 15.9 s)
+08:29:59.279 [Anillo] Nodo 1 no quiere la SC (want_cs = False)
+08:29:59.279 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:29:59.279 [Anillo] Nodo 2 recibe Token (esperó 14.3 s)
+08:29:59.279 [Anillo-B] NODO 2 ENTRANDO a la Sección Crítica...
+08:30:00.686 [Anillo-B] NODO 2 SALIENDO de la Sección Crítica.
+08:30:00.686 [Anillo] Nodo 2 pasa Token a Nodo 0
+
+========== RESUMEN EXPERIMENTO B ==========
+Nodo 0 (retiene el token): entró 10 veces a la SC
+Nodo 1: entró 1 veces a la SC
+Nodo 2: entró 2 veces a la SC
+Duración total: 36.0 s
+Conclusión: mientras el nodo 0 retiene el token, los nodos 1 y 2 NO pueden entrar a la SC y esperan mucho tiempo (inanición / espera muy larga).

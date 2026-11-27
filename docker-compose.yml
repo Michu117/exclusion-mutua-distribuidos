@@ -1,0 +1,49 @@
+# APE 9 - Exclusión mutua distribuida
+# Ningún servicio arranca con "docker compose up" (todos están en un profile).
+# Se ejecutan uno por uno con: docker compose run --rm <servicio>
+
+x-comun: &comun
+  image: ape9-exclusion-mutua
+  build:
+    context: .
+  cpus: "4"        # la guía pide al menos 4 núcleos
+  mem_limit: 4g    # y 4 GB de RAM
+  tty: true
+
+services:
+  # Servicio sin profile: permite que "docker compose build" construya la imagen.
+  # Con "docker compose up" solo muestra cómo ejecutar; no corre ningún algoritmo.
+  ayuda:
+    <<: *comun
+    entrypoint:
+      - python
+      - -c
+      - |
+        print("APE 9 - Exclusión mutua distribuida")
+        print("Ejecute un servicio con: docker compose run --rm <servicio>")
+        print("Servicios: centralizado | ricart-agrawala | anillo | inanicion-a | inanicion-b")
+
+  centralizado:
+    <<: *comun
+    profiles: ["ejecucion"]
+    command: ["1"]
+
+  ricart-agrawala:
+    <<: *comun
+    profiles: ["ejecucion"]
+    command: ["2"]
+
+  anillo:
+    <<: *comun
+    profiles: ["ejecucion"]
+    command: ["3"]
+
+  inanicion-a:
+    <<: *comun
+    profiles: ["experimento"]
+    entrypoint: ["python", "inanicion_a_nodo_gloton.py"]
+
+  inanicion-b:
+    <<: *comun
+    profiles: ["experimento"]
+    entrypoint: ["python", "inanicion_b_retiene_token.py"]

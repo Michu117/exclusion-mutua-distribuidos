@@ -1,0 +1,26 @@
+--- Práctica de Exclusión Mutua Distribuida ---
+1. Servidor Centralizado
+2. Ricart y Agrawala
+3. Anillo de Token
+Opción recibida por argumento: 3
+08:26:41.503 [Anillo] Nodo 0 inicia con el Token
+08:26:41.503 [Anillo] NODO 0 ENTRANDO a la Sección Crítica...
+08:26:42.285 [Anillo] NODO 0 SALIENDO de la Sección Crítica.
+08:26:42.285 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:26:42.286 [Anillo] Nodo 1 recibe Token
+08:26:42.287 [Anillo] Nodo 1 no quiere la SC (want_cs = False)
+08:26:42.287 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:26:42.288 [Anillo] Nodo 2 recibe Token
+08:26:42.288 [Anillo] Nodo 2 no quiere la SC (want_cs = False)
+08:26:42.288 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:26:43.384 [Anillo] Nodo 0 recibe Token
+08:26:43.384 [Anillo] NODO 0 ENTRANDO a la Sección Crítica...
+08:26:43.950 [Anillo] NODO 0 SALIENDO de la Sección Crítica.
+08:26:43.951 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:26:43.951 [Anillo] Nodo 1 recibe Token
+08:26:43.951 [Anillo] Nodo 1 no quiere la SC (want_cs = False)
+08:26:43.951 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:26:43.952 [Anillo] Nodo 2 recibe Token
+08:26:43.952 [Anillo] NODO 2 ENTRANDO a la Sección Crítica...
+08:26:45.060 [Anillo] NODO 2 SALIENDO de la Sección Crítica.
+08:26:45.060 [Anillo] Nodo 2 pasa Token a Nodo 0

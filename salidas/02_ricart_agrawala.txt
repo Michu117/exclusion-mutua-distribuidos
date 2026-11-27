@@ -1,0 +1,42 @@
+--- Práctica de Exclusión Mutua Distribuida ---
+1. Servidor Centralizado
+2. Ricart y Agrawala
+3. Anillo de Token
+Opción recibida por argumento: 2
+08:28:27.321 [R&A] Nodo 2 solicita SC (Tiempo lógico: 1)
+08:28:27.323 [R&A] Nodo 0 envía REPLY a Nodo 2
+08:28:27.324 [R&A] Nodo 0 solicita SC (Tiempo lógico: 3)
+08:28:27.324 [R&A] Nodo 1 envía REPLY a Nodo 2
+08:28:27.324 [R&A] NODO 2 ENTRANDO a la Sección Crítica...
+08:28:27.325 [R&A] Nodo 2 difiere REPLY a Nodo 0 (estoy en la SC)
+08:28:27.325 [R&A] Nodo 1 envía REPLY a Nodo 0
+08:28:27.795 [R&A] Nodo 1 solicita SC (Tiempo lógico: 5)
+08:28:27.795 [R&A] Nodo 0 difiere REPLY a Nodo 1 (yo=(3,0) < él=(5,1))
+08:28:27.795 [R&A] Nodo 2 difiere REPLY a Nodo 1 (estoy en la SC)
+08:28:28.236 [R&A] NODO 2 SALIENDO de la Sección Crítica.
+08:28:28.236 [R&A] Nodo 2 envía REPLY diferido a Nodo 0
+08:28:28.236 [R&A] Nodo 2 envía REPLY diferido a Nodo 1
+08:28:28.237 [R&A] NODO 0 ENTRANDO a la Sección Crítica...
+08:28:29.218 [R&A] NODO 0 SALIENDO de la Sección Crítica.
+08:28:29.218 [R&A] Nodo 0 envía REPLY diferido a Nodo 1
+08:28:29.218 [R&A] NODO 1 ENTRANDO a la Sección Crítica...
+08:28:30.457 [R&A] NODO 1 SALIENDO de la Sección Crítica.
+08:28:30.873 [R&A] Nodo 2 solicita SC (Tiempo lógico: 7)
+08:28:30.873 [R&A] Nodo 0 envía REPLY a Nodo 2
+08:28:30.873 [R&A] Nodo 1 envía REPLY a Nodo 2
+08:28:30.874 [R&A] NODO 2 ENTRANDO a la Sección Crítica...
+08:28:31.988 [R&A] Nodo 0 solicita SC (Tiempo lógico: 9)
+08:28:31.988 [R&A] Nodo 1 envía REPLY a Nodo 0
+08:28:31.989 [R&A] Nodo 2 difiere REPLY a Nodo 0 (estoy en la SC)
+08:28:32.294 [R&A] NODO 2 SALIENDO de la Sección Crítica.
+08:28:32.295 [R&A] Nodo 2 envía REPLY diferido a Nodo 0
+08:28:32.295 [R&A] NODO 0 ENTRANDO a la Sección Crítica...
+08:28:33.665 [R&A] NODO 0 SALIENDO de la Sección Crítica.
+08:28:33.912 [R&A] Nodo 1 solicita SC (Tiempo lógico: 15)
+08:28:33.912 [R&A] Nodo 2 envía REPLY a Nodo 1
+08:28:33.912 [R&A] Nodo 0 envía REPLY a Nodo 1
+08:28:33.913 [R&A] NODO 1 ENTRANDO a la Sección Crítica...
+08:28:34.699 [R&A] NODO 1 SALIENDO de la Sección Crítica.
+08:28:34.700 [R&A] Nodo 0 terminó sus rondas y todos los nodos ya terminaron.
+08:28:34.701 [R&A] Nodo 1 terminó sus rondas y todos los nodos ya terminaron.
+08:28:34.701 [R&A] Nodo 2 terminó sus rondas y todos los nodos ya terminaron.

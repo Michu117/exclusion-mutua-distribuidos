@@ -1,0 +1,64 @@
+--- Experimento A: Nodo glotón en el Anillo de Token ---
+08:31:02.925 [Anillo] Nodo 0 inicia con el Token
+08:31:02.925 [Anillo-A] NODO 0 ENTRANDO a la Sección Crítica...
+08:31:05.925 [Anillo-A] NODO 0 SALIENDO de la Sección Crítica.
+08:31:05.925 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:31:05.927 [Anillo] Nodo 1 recibe Token
+08:31:05.927 [Anillo] Nodo 1 no quiere la SC (want_cs = False)
+08:31:05.927 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:31:05.929 [Anillo] Nodo 2 recibe Token
+08:31:05.929 [Anillo] Nodo 2 no quiere la SC (want_cs = False)
+08:31:05.929 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:31:06.027 [Anillo] Nodo 0 recibe Token
+08:31:06.027 [Anillo-A] NODO 0 ENTRANDO a la Sección Crítica...
+08:31:09.027 [Anillo-A] NODO 0 SALIENDO de la Sección Crítica.
+08:31:09.027 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:31:09.028 [Anillo] Nodo 1 recibe Token
+08:31:09.028 [Anillo-A] NODO 1 ENTRANDO a la Sección Crítica...
+08:31:10.487 [Anillo-A] NODO 1 SALIENDO de la Sección Crítica.
+08:31:10.487 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:31:10.487 [Anillo] Nodo 2 recibe Token
+08:31:10.487 [Anillo] Nodo 2 no quiere la SC (want_cs = False)
+08:31:10.487 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:31:10.488 [Anillo] Nodo 0 recibe Token
+08:31:10.488 [Anillo-A] NODO 0 ENTRANDO a la Sección Crítica...
+08:31:13.488 [Anillo-A] NODO 0 SALIENDO de la Sección Crítica.
+08:31:13.488 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:31:13.488 [Anillo] Nodo 1 recibe Token
+08:31:13.488 [Anillo-A] NODO 1 ENTRANDO a la Sección Crítica...
+08:31:14.115 [Anillo-A] NODO 1 SALIENDO de la Sección Crítica.
+08:31:14.116 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:31:14.116 [Anillo] Nodo 2 recibe Token
+08:31:14.116 [Anillo-A] NODO 2 ENTRANDO a la Sección Crítica...
+08:31:15.514 [Anillo-A] NODO 2 SALIENDO de la Sección Crítica.
+08:31:15.514 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:31:15.515 [Anillo] Nodo 0 recibe Token
+08:31:15.515 [Anillo-A] NODO 0 ENTRANDO a la Sección Crítica...
+08:31:18.515 [Anillo-A] NODO 0 SALIENDO de la Sección Crítica.
+08:31:18.515 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:31:18.516 [Anillo] Nodo 1 recibe Token
+08:31:18.516 [Anillo-A] NODO 1 ENTRANDO a la Sección Crítica...
+08:31:19.140 [Anillo-A] NODO 1 SALIENDO de la Sección Crítica.
+08:31:19.140 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:31:19.140 [Anillo] Nodo 2 recibe Token
+08:31:19.140 [Anillo] Nodo 2 no quiere la SC (want_cs = False)
+08:31:19.140 [Anillo] Nodo 2 pasa Token a Nodo 0
+08:31:19.141 [Anillo] Nodo 0 recibe Token
+08:31:19.141 [Anillo-A] NODO 0 ENTRANDO a la Sección Crítica...
+08:31:22.141 [Anillo-A] NODO 0 SALIENDO de la Sección Crítica.
+08:31:22.141 [Anillo] Nodo 0 pasa Token a Nodo 1
+08:31:22.141 [Anillo] Nodo 1 recibe Token
+08:31:22.141 [Anillo-A] NODO 1 ENTRANDO a la Sección Crítica...
+08:31:22.751 [Anillo-A] NODO 1 SALIENDO de la Sección Crítica.
+08:31:22.751 [Anillo] Nodo 1 pasa Token a Nodo 2
+08:31:22.752 [Anillo] Nodo 2 recibe Token
+08:31:22.752 [Anillo-A] NODO 2 ENTRANDO a la Sección Crítica...
+08:31:24.234 [Anillo-A] NODO 2 SALIENDO de la Sección Crítica.
+08:31:24.235 [Anillo] Nodo 2 pasa Token a Nodo 0
+
+========== RESUMEN EXPERIMENTO A ==========
+Nodo 0 (glotón): entró 5 veces a la SC (de 5 rondas)
+Nodo 1: entró 4 veces a la SC (de 5 rondas)
+Nodo 2: entró 2 veces a la SC (de 5 rondas)
+Duración total: 22.4 s
+Conclusión: NO hay inanición; los demás nodos siguen entrando porque el token se pasa siempre después de cada uso.
